@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ESP 1.0.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ESP 1.0" startnode="1" creator="Twine" creator-version="2.3.16" ifid="12BE316D-8B6F-4005-9D63-B03F0B37B805" zoom="0.25" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="ESP 1.0" startnode="1" creator="Twine" creator-version="2.3.16" ifid="12BE316D-8B6F-4005-9D63-B03F0B37B805" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
 	background-color: white;
 	color: black;
 	font-family: Georgia, serif;
@@ -21,7 +21,7 @@ tw-passage img {
 }
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1542.6666666666667,225.6666666666666" size="200,100">Witaj w grze tekstowej o (text-style:&quot;bold&quot;)[Ekonomii sektora publicznego]! 
-(text-style:&quot;superscript&quot;)[Wszystkie emoji w grze są klikalne i zawierają bonusowe treści [[🎁]]]
+(text-style:&quot;superscript&quot;)[Niektóre emoji w grze są klikalne i zawierają bonusowe treści [[🎁]]]
 
 =|=
 Wpisz swoje imię
@@ -145,7 +145,7 @@ Redaktor prowadzący rozmowę kwalifikacyjną mówi, że dobry dziennikarz-ekono
 Kontynuujesz wypowiedź mówiąc, że oczywistym jest to, że w Chinach rząd odgrywa ogromną rolę w gospodarce, ale pytanie było na tyle ogólne, że - odwołując się do faktów - można odpowiedzieć na nie na różne sposoby.
 Według Twojej wiedzy wydatki państwowe w relacji do PKB (a więc jedna z podstawowych miar zakresu udziału państwa w gospodarce) są większe w USA niż w Chinach.
 Dalej podkreślasz, że dobry dziennikarz ekonomiczny posługuje się różnymi wskaźnikami i gdy pisze np. o stopie bezrobocia, to zwraca uwagę, czy jest to bezrobocie rejestrowane czy BAEL-owskie. A gdy mówi o średnim wynagrodzeniu, to podkreśla, że dane GUS-u (w grudniu pokazywały ok. 6,6 tys. brutto) uwzględniają tylko przedsiębiorstwa pow. 9 osób, bez samozatrudnienia i bez sektora publicznego. I że musi odróżniać średnią od mediany.
-[[Sprawdź, jaki jest wynik rozmowy kwalifikacyjnej]] </tw-passagedata><tw-passagedata pid="19" name="📖" tags="" position="1827.6666666666667,725.6666666666665" size="100,100">Interesującą analizę tego, jak wygląda współczesna debata polityczna i skąd bierze się polaryzacja zaprezentował Arnold Kling w książce “The Three Languages of Politics: Talking Across the Political Divides”. 
+[[Sprawdź, jaki jest wynik rozmowy kwalifikacyjnej]] </tw-passagedata><tw-passagedata pid="19" name="📖" tags="" position="1829.3333333333335,725.6666666666665" size="100,100">Interesującą analizę tego, jak wygląda współczesna debata polityczna i skąd bierze się polaryzacja zaprezentował Arnold Kling w książce “The Three Languages of Politics: Talking Across the Political Divides”. 
 &lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/41-vo0+9dmL._SX355_BO1,204,203,200_.jpg&quot; width=30%&gt;
 Kling dostrzegł, że współcześnie dyskusja na tematy polityczne, zarówno w mediach tradycyjnych, jak w mediach społecznościowych, jest bardzo niekonstruktywna.
 Jego zdaniem, ludzie tak naprawdę &#39;&#39;nie chcą poznać argumentów drugiej strony&#39;&#39;, a nawet nie chcą osób z drugiej strony debaty przekonać za pomocą faktów i argumentacji. Zależy im (nam!) przede wszystkim na potwierdzeniu swojej racji i zdyskredytowaniu tej drugiej strony.
@@ -169,6 +169,8 @@ Ten wykres pokazuje, jak głosowali członkowie poszczególnych partii w ameryka
 Im więcej niebieskich kropek na prawo, tym częściej pojedynczy parlamentarzyści z Partii Demokratycznej głosowali inaczej niż własna partia, a podobnie jak Partia Republikańska. Podobnie im więcej czerwonych kropek na lewo, tym częściej pojedynczy parlamentarzyści z Partii Republikańskiej głosowali razem z Partią Demokratyczną.
 Jak widać, było to częste w przeszłości, a współcześnie - niemal się nie wydarza. 
 Podobne zjawisko można zaobserwować w polskim Sejmie - &lt;a href=&quot;https://twitter.com/sejm_watch/status/1330873351825448962&quot; target=_blank&gt;link&lt;/a&gt;
+
+(if: $p1 is 0)[(set: $p2 to 1)Znalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] pierwszy ukryty element. Jeśli odnajdziesz drugi, to otrzymasz dodatkowy punkt do aktywności z zajęć.](if: $p1 is 1)[Odnalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] drugi ukryty element gry. Oto unikalny kod do przesłania wykładowcy: $imie(either: &quot;-ESP-&quot;, &quot;-Ekonomia-&quot;,&quot;-UMCS-&quot;)(monthday:)-(random: 1,2)(random: 3,4)(random: 5,6)(random: 7,8) - przesłanie tego kodu w wiadomości prywatnej na Teams daje punkt do aktywności z dzisiejszego wykładu zamiast quizu, o ile kod zostanie wysłany w środę 26.01]
 [[Powrót-&gt;Rozmowa dziennikarz]] </tw-passagedata><tw-passagedata pid="20" name="Sprawdź wynik rozmowy kwalifikacyjnej" tags="" position="2136.666666666667,1525.6666666666663" size="200,100">Niestety, tym razem nie dostajesz angażu. Ale ponieważ redakcji spodobał sie jeden z Twoich pomysłów, to możesz spróbować w kolejnej rekrutacji za miesiąc.
 [[Odczekaj dwa tygodnie i spróbuj ponownie]]
 [[Spróbuj innej pracy-&gt;Oferty pracy]]</tw-passagedata><tw-passagedata pid="21" name="Odczekaj dwa tygodnie i spróbuj ponownie" tags="" position="1839,1528.6666666666663" size="200,100">&lt;img src=https://media.giphy.com/media/fMYhlRdVtRnsk/giphy.gif&gt;
@@ -297,10 +299,10 @@ Więcej o nich można przeczytać klikając na poniższe linki:
 (checkbox: 2bind $3_c,&quot;Podatek od wartości nieruchomości&quot;)
 (checkbox: 2bind $3_d,&quot;Podatek regresywny&quot;)
 [[Wynik testu]]</tw-passagedata><tw-passagedata pid="40" name="Wynik testu" tags="" position="937.6666666666667,1526.9999999999998" size="200,100">(if:$1_a is true)[(set: $wynik to 1)] (if:$1_b is true)[(set: $wynik to it - 1)] (if:$2_a is true)[(set: $wynik to it + 1)] (if:$2_b is true)[(set: $wynik to it - 1)] (if:$2_c is true)[(set: $wynik to it - 1)] (if:$2_d is true)[(set: $wynik to it - 1)] (if:$3_a is true)[(set: $wynik to it - 1)] (if:$3_b is true)[(set: $wynik to it + 1)] (if:$3_c is true)[(set: $wynik to it - 1)] (if:$3_d is true)[(set: $wynik to it - 1)] Szukasz swojego nazwiska...
-(live: 1.5s)[Czytasz, że (if: $imie is 0)[wynik to](if: $imie is not 0)[wynik przy $imie $nazwisko] to]
+(live: 1.5s)[Czytasz, że (if: $imie is 0)[wynik to](if: $imie is not 0)[wynik przy &quot;$imie $nazwisko]&quot; to]
 (live: 3s)[... $wynik na 3 punkty możliwe. ]
-(live: 4.5s)[(if: $wynik &gt; 1)[Masz tę robotę!  [[Zacznij pracę]]](if: $wynik &lt; 2)[Niestety nie udało się zaliczyć testu - spróbuj [jeszcze raz -&gt;Zaczekaj na następny test]] lub z inną [[pracą-&gt;Oferty pracy]]]
-]</tw-passagedata><tw-passagedata pid="41" name="Wykonaj następne zadanie" tags="" position="994.3333333333335,2479.333333333334" size="200,100">Kolejne zadanie jest naprawdę poważne - masz zaproponować metodę rozwiązania problemu gigantów technologicznych typu Facebook. Z jednej strony nie można zaliczyć go do tradycyjnych monopoli, ponieważ istnieje wielu konkurentów, a Facebook za swoje usługi nie narzuca wysokich monopolistycznych cen. [[📚]]
+(live: 4.5s)[(if: $wynik &gt; 1)[Masz tę robotę!  [[Zacznij pracę]]](if: $wynik &lt; 2)[Niestety nie udało się zaliczyć testu - spróbuj [jeszcze raz -&gt;Zaczekaj na następny test]] lub z inną [[ofertą pracy-&gt;Oferty pracy]]]
+</tw-passagedata><tw-passagedata pid="41" name="Wykonaj następne zadanie" tags="" position="994.3333333333335,2479.333333333334" size="200,100">Kolejne zadanie jest naprawdę poważne - masz zaproponować metodę rozwiązania problemu gigantów technologicznych typu Facebook. Z jednej strony nie można zaliczyć go do tradycyjnych monopoli, ponieważ istnieje wielu konkurentów, a Facebook za swoje usługi nie narzuca wysokich monopolistycznych cen. [[📚]]
 Z drugiej strony - firmy zdobyły tak dużą pozycję rynkową, że mają kontrolę nie tylko nad wchodzącymi na rynek konkurentami, ale i nad debatą publiczną. Im więcej użytkowników (i ich danych), tym większa jest siła tych podmiotów.
 Jakie rozwiązanie sugerujesz?
 [[Nacjonalizacja! Niech Orlen przejmie Facebooka]]
@@ -320,7 +322,6 @@ What do you answer?
 * [[Tak jest!]]
 * [[Zróbmy wyjątek dla nowo powstających sieci społecznościowych, które mają mało użytkowników]]</tw-passagedata><tw-passagedata pid="45" name="📚" tags="" position="811.0000000000002,2472.333333333334" size="100,100">O zagrożeniach płynących od współczesnych gigantów technologicznych napisano wiele ciekawych książek.
 
-
 =|=
 W The Big Nine Amy Webb dowodzdi, że nad rozwojem sztucznej inteligencji kontrolę ma wąskie grono korporacji (czy też osób zarządzających tymi korporacjami). Są o amerykańskie G-Mafia (Amazon, Google, Facebook, Microsoft, IBM and Apple) i chińskie BAT (Baidu, Alibaba, Tencent). Nie ma kontroli społecznej nad tym, a stopień kontroli ze strony państwa jest niewielki (w USA jest podejście “ask for forgiveness rather than permission”, w Chinach jest wprawdzie większy stopień kontroli, ale niestety państwo wykorzystuje to do kontroli społeczeństwa). Zdaniem Webb taki układ może skutkować tym, że systemy sztucznej inteligencji nie będą zgodne z naszymi wartościami i celami. 
 =|=
@@ -333,7 +334,9 @@ W The Age of Surveillance Capitalism Shoshana Zuboff dowodzi, że logika kapital
 &lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/71kgvTZyGRL.jpg&quot; height=500px&gt;
 
 |==|
-</tw-passagedata><tw-passagedata pid="46" name="Tak jest!" tags="" position="934.3333333333335,3057.0000000000005" size="100,100">Może to być zbyt mocna regulacja. 
+
+(if: $p2 is 0)[(set: $p1 to 1)Znalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] pierwszy ukryty element. Jeśli odnajdziesz drugi, to otrzymasz dodatkowy punkt do aktywności z zajęć.](if: $p2 is 1)[Odnalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] drugi ukryty element gry. Oto unikalny kod do przesłania wykładowcy: $imie(either: &quot;-ESP-&quot;, &quot;-Ekonomia-&quot;,&quot;-UMCS-&quot;)(monthday:)-(random: 1,2)(random: 3,4)(random: 5,6)(random: 7,8) - przesłanie tego kodu w wiadomości prywatnej na Teams daje punkt do aktywności z dzisiejszego wykładu zamiast quizu, o ile kod zostanie wysłany w środę 26.01]
+[[Powrót-&gt;Wykonaj następne zadanie]] </tw-passagedata><tw-passagedata pid="46" name="Tak jest!" tags="" position="934.3333333333335,3057.0000000000005" size="100,100">Może to być zbyt mocna regulacja. 
 W ten sposób najprawdopodobniej zostanie zahamowana innowacyjność w tym obszarze, ponieważ takie rozwiązanie będzie narzucało dodatkowe koszty również na niewielkie start-upy, jak też na regulatora, który będzie musiał śledzić i kontrolować każdy, nawet najmniejszy, serwis społecznościowy.
 A do tego te start-upom trudniej będzie w początkowej fazie rozwoju budować swoją przewag konkurencyjnej.
 [[Chcę zmienić zdanie-&gt;Regulacja nakazująca, aby każda sieć społecznościowa udostępniała protokół do komunikacji innym sieciom]] </tw-passagedata><tw-passagedata pid="47" name="Zróbmy wyjątek dla nowo powstających sieci społecznościowych, które mają mało użytkowników" tags="" position="1552.3333333333333,2621" size="100,100">To mądra regulacja.
@@ -343,9 +346,9 @@ W innym przypadku najprawdopodobniej zahamowana zostałaby innowacyjność w tym
 &lt;img src=&quot;https://i.imgur.com/xVgInyW.png&quot; width=40%&gt;
 Co wybierzesz?
 * [[Prywatyzować!]]
-* [[Zwiększyć nakłady na więziennictwo]]</tw-passagedata><tw-passagedata pid="49" name="Prywatyzować!" tags="" position="1048.9999999999998,2210.0000000000005" size="200,100">Doświadczenia z prywatnym więziennictwem (np. w Stanach Zjednoczonych) są mieszane. 
+* [[Wyrażasz zastrzeżenia wobec tego rozwiązania]]</tw-passagedata><tw-passagedata pid="49" name="Prywatyzować!" tags="" position="1048.9999999999998,2210.0000000000005" size="200,100">Doświadczenia z prywatnym więziennictwem (np. w Stanach Zjednoczonych) są mieszane. 
 Z jednej strony umożliwia ono rzeczywiście redukcję kosztów. Z drugiej strony więźniowie są postrzegani jako &quot;towar&quot;. Niektórzy argumentują, że osoby związane biznesowo z prywatnymi więzieniami w USA lobbują za utrzymaniem np. restrykcyjnych przepisów antynarkotykowych, gdyż dzięki temu więcej osób trafia &quot;za kraty&quot;. Badania pokazały również, że niższe koszty w prywatnych więzieniach biorą się m.in. z niższych pensji funkcjonariuszy, co czasem może przekładać się na niewłaściwie zachowania (np. korupcję) lub większą rotację funkcjonariuszy (a więc będą mniej doświadczeni w tej pracy).
-[[Select another option-&gt;Wykonaj następne zadanie]] </tw-passagedata><tw-passagedata pid="50" name="Zwiększyć nakłady na więziennictwo" tags="" position="740.3333333333335,2127.333333333334" size="200,100">Doświadczenia z prywatnym więziennictwem (np. w Stanach Zjednoczonych) są mieszane. 
+[[Select another option-&gt;Wykonaj następne zadanie]] </tw-passagedata><tw-passagedata pid="50" name="Wyrażasz zastrzeżenia wobec tego rozwiązania" tags="" position="740.3333333333335,2127.333333333334" size="200,100">Doświadczenia z prywatnym więziennictwem (np. w Stanach Zjednoczonych) są mieszane. 
 Z jednej strony umożliwia ono rzeczywiście redukcję kosztów. Z drugiej strony więźniowie są postrzegani jako &quot;towar&quot;. Niektórzy argumentują, że osoby związane biznesowo z prywatnymi więzieniami w USA lobbują za utrzymaniem np. restrykcyjnych przepisów antynarkotykowych, gdyż dzięki temu więcej osób trafia &quot;za kraty&quot;. Badania pokazały również, że niższe koszty w prywatnych więzieniach biorą się m.in. z niższych pensji funkcjonariuszy, co czasem może przekładać się na niewłaściwie zachowania (np. korupcję) lub większą rotację funkcjonariuszy (a więc będą mniej doświadczeni w tej pracy).
 [[Wykonaj następne zadanie]]</tw-passagedata><tw-passagedata pid="51" name="Zaczynasz pracę analityka" tags="" position="4324.333333333332,937.6666666666664" size="100,100">Na dzień dobry lecisz do Indii (link:&quot;🛫&quot;)[
 &lt;img src=https://media.giphy.com/media/ufjndf6lt22wo/giphy.gif&gt;
@@ -362,7 +365,7 @@ Z jednej strony umożliwia ono rzeczywiście redukcję kosztów. Z drugiej stron
 =|=
 &lt;img src=&quot;https://i.imgur.com/XytiJ1B.png&quot; width=60%&gt;
 |==|
-[[Wybierz inną odpowiedź-&gt;Rozmowa analityk]] </tw-passagedata><tw-passagedata pid="53" name="Elinor Ostrom" tags="" position="3861.3333333333335,810" size="100,100">&quot;&quot;Tak, oczwywiście (if: $imie is 0)[](if: $imie is not 0)[$imie, ]masz rację&quot;, słyszysz w odpowiedzi.
+[[Wybierz inną odpowiedź-&gt;Rozmowa analityk]] </tw-passagedata><tw-passagedata pid="53" name="Elinor Ostrom" tags="" position="3859.666666666667,810" size="100,100">&quot;Tak, oczywiście (if: $imie is 0)[](if: $imie is not 0)[$imie, ]masz rację&quot;, słyszysz w odpowiedzi.
 &lt;img src=&quot;https://i.imgur.com/zdpkaNQ.png&quot; width=50%&gt;
 Przed E. Ostrom ekonomiści uważali, że zasoby wspólne są albo skazane na wyczerpanie (tzw. tragedia wspólnego pastwiska) albo konieczna jest interwencja rządu taka jak wprowadzenie nakazów, zakazów, limitów, zbywalnych zezwoleń lub podatków, albo prywatyzacja danego zasobu. 
 Rozmawiacie dalej o tym, że Ostrom pokazała, że tak jednak być nie musi, ponieważ ludzie mogą się zorganizować i wypracować odpowiednie zasady (szczególnie w niewielkich społecznościach) - sklasyfikowała [[8 takich zasad-&gt;8 zasadach Ostrom]] m.in. to, że zasób musi mieć zdefiniowane granice, a zasady powinny być dostosowane do lokalnych reguł.
@@ -398,7 +401,7 @@ Proponując takie rozwiązanie, możemy spodziewać się raczej przeniesienia fa
 &lt;img src=https://i.imgur.com/i7NTKll.png width=50%&gt;
 Dzięki temu te podmioty, które mogą zmniejszyć emisję względnie tanio będą miały do tego bodźce ekonomiczne, a pozostałe również będą w sytuacji lepszej od wprowadzenia limitu (jeśli cena będzie odpowiednia, to kupią zezwolenia na zanieczyszczenia zamiast ograniczać emisję, a korzyści środowiskowe uzyskamy, dzięki ograniczeniu emisji przez te podmioty, które sprzedały niewykorzystane zezwolenia.
 (text-style:&quot;smear&quot;)[Gratulacje!] Jesteś zatrudnion(if:$rodzaj is &quot;żeński&quot;)[a](if:$rodzaj is &quot;męski&quot;)[y]!
-[[Zaczynasz pracę analityka]] </tw-passagedata><tw-passagedata pid="59" name="🎁" tags="" position="1232.6666666666665,223.66666666666663" size="200,100">Tak, dokładnie jak w tym przypadku. Najczęściej są to uzupełnienia wiedzy i wątki poboczne, ale jest również bonus podnoszący ocenę końcową z przedmiotu o połowę dla kilku pierwszych osób.
+[[Zaczynasz pracę analityka]] </tw-passagedata><tw-passagedata pid="59" name="🎁" tags="" position="1232.6666666666665,223.66666666666663" size="200,100">Tak, dokładnie jak w tym przypadku. Najczęściej są to uzupełnienia wiedzy i wątki poboczne, ale uważnie klikając można znaleźć również dodatkowy punkt do zajęć.
 &lt;img src=&quot;https://media.giphy.com/media/3oKIPlLZEbEbacWqOc/giphy.gif&quot;&gt;
 [[Powrót-&gt;Start]] </tw-passagedata><tw-passagedata pid="60" name="Gurgaon" tags="" position="4079.9999999999995,1688.6666666666665" size="100,100">Gurgaon to bardzo interesujące miasto z perspektywy roli państwa w gospodarce. W odróżnieniu pobliskiego Faridabadu powstało właściwie bez udziału państwa i samorządu. 
 &lt;img src=&quot;https://s01.sgp1.cdn.digitaloceanspaces.com/article/103732-jsqgftzjdu-1540222742.jpg&quot; width=80%&gt;
@@ -458,9 +461,9 @@ Ilustracje są od &lt;a href=&quot;https://icons8.com/illustrations/author/5c07e
 0.3 - rozbudowany scenariusz &quot;dziennikarski&quot;
 0.4 - dodane: wybór rodzaju gramatycznego i odmiana końcówek, testy z punktami i mechanizm z liczeniem dni
 0.5 - gruntowne poprawki przed oddaniem gry
-1.0 - dodane ilustracje, animacje
+1.0 - dodane ilustracje, animacje, mechanizm punktowy i poprawiony szereg błędów
 
-Dziękuję beta(a właściwie alfa)-testerom gry: AB, JC.
+Podziękowania dla beta-testerów gry: AB, JC.
 
 [[Powrót-&gt;Start]] </tw-passagedata><tw-passagedata pid="69" name="Pierwsze pytanie" tags="" position="937.6666666666667,924.0000000000001" size="200,100">Pierwsze pytanie brzmi następująco:
 Co to jest efektywność w rozumieniu Pareto?
