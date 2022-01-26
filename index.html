@@ -37,7 +37,7 @@ Wpisz swoje nazwisko
 Rodzaj gramatyczny (potrzebne do odmiany zwrotów): (dropdown: 2bind $rodzaj,&quot;żeński&quot;,&quot;męski&quot;)
 [[Rozpocznij grę -&gt;Loading]]
 
-[[Wersja gry 1.0]]</tw-passagedata><tw-passagedata pid="2" name="Oferty pracy" tags="" position="2139.333333333334,504.00000000000017" size="200,100">Po wysłaniu CV, dostał(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] zaproszenie na rozmowy kwalifikacyjne do następujących ogłoszeń: 
+[[Wersja gry 1.01]]</tw-passagedata><tw-passagedata pid="2" name="Oferty pracy" tags="" position="2139.333333333334,504.00000000000017" size="200,100">Po wysłaniu CV, dostał(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] zaproszenie na rozmowy kwalifikacyjne do następujących ogłoszeń: 
 
 =|=
 [[Dziennikarz w portalu opisującym sektor publiczny |Rozmowa dziennikarz]]
@@ -299,9 +299,9 @@ Więcej o nich można przeczytać klikając na poniższe linki:
 (checkbox: 2bind $3_c,&quot;Podatek od wartości nieruchomości&quot;)
 (checkbox: 2bind $3_d,&quot;Podatek regresywny&quot;)
 [[Wynik testu]]</tw-passagedata><tw-passagedata pid="40" name="Wynik testu" tags="" position="937.6666666666667,1526.9999999999998" size="200,100">(if:$1_a is true)[(set: $wynik to 1)] (if:$1_b is true)[(set: $wynik to it - 1)] (if:$2_a is true)[(set: $wynik to it + 1)] (if:$2_b is true)[(set: $wynik to it - 1)] (if:$2_c is true)[(set: $wynik to it - 1)] (if:$2_d is true)[(set: $wynik to it - 1)] (if:$3_a is true)[(set: $wynik to it - 1)] (if:$3_b is true)[(set: $wynik to it + 1)] (if:$3_c is true)[(set: $wynik to it - 1)] (if:$3_d is true)[(set: $wynik to it - 1)] Szukasz swojego nazwiska...
-(live: 1.5s)[Czytasz, że (if: $imie is 0)[wynik to](if: $imie is not 0)[wynik przy &quot;$imie $nazwisko]&quot; to]
+(live: 1.5s)[Czytasz, że (if: $imie is 0)[wynik to](if: $imie is not 0)[wynik przy &quot;$imie $nazwisko&quot;] to]
 (live: 3s)[... $wynik na 3 punkty możliwe. ]
-(live: 4.5s)[(if: $wynik &gt; 1)[Masz tę robotę!  [[Zacznij pracę]]](if: $wynik &lt; 2)[Niestety nie udało się zaliczyć testu - spróbuj [jeszcze raz -&gt;Zaczekaj na następny test]] lub z inną [[ofertą pracy-&gt;Oferty pracy]]]
+(live: 4.5s)[(if: $wynik &gt; 1)[Masz tę robotę!  [[Zacznij pracę]]](if: $wynik &lt; 2)[Niestety nie udało się zaliczyć testu - spróbuj [jeszcze raz -&gt;[[Zaczekaj na następny test]]]] lub z inną [[ofertą pracy-&gt;Oferty pracy]]]
 </tw-passagedata><tw-passagedata pid="41" name="Wykonaj następne zadanie" tags="" position="994.3333333333335,2479.333333333334" size="200,100">Kolejne zadanie jest naprawdę poważne - masz zaproponować metodę rozwiązania problemu gigantów technologicznych typu Facebook. Z jednej strony nie można zaliczyć go do tradycyjnych monopoli, ponieważ istnieje wielu konkurentów, a Facebook za swoje usługi nie narzuca wysokich monopolistycznych cen. [[📚]]
 Z drugiej strony - firmy zdobyły tak dużą pozycję rynkową, że mają kontrolę nie tylko nad wchodzącymi na rynek konkurentami, ale i nad debatą publiczną. Im więcej użytkowników (i ich danych), tym większa jest siła tych podmiotów.
 Jakie rozwiązanie sugerujesz?
@@ -453,17 +453,15 @@ Wówczas użytkownicy mają swobodę wyboru środka transportu, a jeśli jeden k
  (live: 2.4s)[Budowanie algorytmów sztucznej inteligencji NPC...]
  (live: 3.6s)[Poszukiwanie memów...]
  (live: 4.8s)[Tworzenie żartów...]
- (live: 6s)[Rozczarowanie z powodu jakości żartów...]</tw-passagedata><tw-passagedata pid="68" name="Wersja gry 1.0" tags="" position="1539.666666666667,382.3333333333334" size="100,100">Autor: Grzegorz Kwiatkowski
+ (live: 6s)[Rozczarowanie z powodu jakości żartów...]</tw-passagedata><tw-passagedata pid="68" name="Wersja gry 1.01" tags="" position="1539.666666666667,382.3333333333334" size="100,100">Autor: Grzegorz Kwiatkowski
 Ilustracje są od &lt;a href=&quot;https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6&quot; target=_blank&gt;Icons 8&lt;/a&gt; oraz &lt;a href=&quot;https://icons8.com/illustrations/author/5dca95ef01d036001426e2bc&quot; target=_blank&gt;Ivan Haidutski&lt;/a&gt;.
 
 0.1 - dodane bazowe scenariusze gry
 0.2 - poprawionne literówki i błędy
 0.3 - rozbudowany scenariusz &quot;dziennikarski&quot;
 0.4 - dodane: wybór rodzaju gramatycznego i odmiana końcówek, testy z punktami i mechanizm z liczeniem dni
-0.5 - gruntowne poprawki przed oddaniem gry
 1.0 - dodane ilustracje, animacje, mechanizm punktowy i poprawiony szereg błędów
-
-Podziękowania dla beta-testerów gry: AB, JC.
+1.01 - drobne poprawki przed publikacją gry
 
 [[Powrót-&gt;Start]] </tw-passagedata><tw-passagedata pid="69" name="Pierwsze pytanie" tags="" position="937.6666666666667,924.0000000000001" size="200,100">Pierwsze pytanie brzmi następująco:
 Co to jest efektywność w rozumieniu Pareto?
@@ -483,56 +481,19 @@ Niektóre skrzyżowania nie są niebezpieczne, więc zainstalowanie tam urządze
 Te pieniądze mogłyby zwiększyć bezpieczeństwo, gdyby zostały wydane w inny sposób.
 Za każdym razem, gdy wydajemy publiczne pieniądze, powinniśmy pamiętać o &quot;koszcie alternatywnym&quot; (tj. myśleć jak inaczej moglibyśmy wykorzystać tę kwotę?).
 
-[[Następne zadanie]] </tw-passagedata><tw-passagedata pid="73" name="Zaczekaj na następny test" tags="" position="786.6666666666667,1525" size="100,100">Next test for government interview is after one week.
+[[Następne zadanie]] </tw-passagedata><tw-passagedata pid="73" name="Zaczekaj na następny test" tags="" position="786.6666666666667,1523.3333333333333" size="100,100">Następny test jest za tydzień
 &lt;img src=https://media.giphy.com/media/fMYhlRdVtRnsk/giphy.gif&gt;
 (set: $m to 0)
 (live:1s)[
- Days go by: $m
+ Minęło dni: $m
  (set: $m to it + 1)
- (if: $m &gt; 7)[[[Try again-&gt;Rozmowa rząd]]]
+ (if: $m &gt; 7)[[[Spróbuj ponownie-&gt;Rozmowa rząd]]]
 ]</tw-passagedata><tw-passagedata pid="74" name="Jedno rozwiązanie w tym przypadku nie wystarczy. Zastosujmy mix!" tags="" position="4631.666666666666,1915.3333333333335" size="100,100">Tak jest!
 Według ekspertów ds. transportu miejskiego najlepszym rozwiązaniem jest połączenie kilku różnych rozwiązań, np. rozbudowy infrastruktury z poprawą jakości transportu publicznego i rozbudową ścieżek rowerowych.
 Wówczas użytkownicy mają swobodę wyboru środka transportu, a jeśli jeden kanał jest bardziej uciążliwy (np. autobusy są przepełnione, ludzie elastycznie przesiadają się na inne kanały).
 [[Przejdź dalej]] </tw-passagedata><tw-passagedata pid="75" name="🌍" tags="" position="2883.6666666666665,2034.333333333333" size="100,100">Odnalaz(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] tajemne przejście do innej gry - robocza wersja tworzonej właśnie drugiej części gry o inflacji (możesz pamiętać ją z poprzedniego roku).
 Kliknij &lt;a href=&quot;https://gkwiatk.github.io/gra-inflacja-2/&quot; target=_blank&gt;tu&lt;/a&gt;, aby zagrać.
-Kliknij [[tu-&gt;Sierra Leone]], aby wrócić do Sierra Leone.</tw-passagedata><tw-passagedata pid="76" name="Untitled Passage" tags="" position="5016.666666666666,1025.6666666666665" size="100,100">Paradoksalnie, większe wydatki teraz, oczywiście odpowiednio rozgospodarowane, mogą w długim okresie przełożyć się na. 
-Największą oszczędnością dla systemu więziennictwa byłoby to, gdyby dana osoba w ogóle się w więzieniu nie znalazła.
-Według raportu Ministerstwa Sprawiedliwości, w Polsce do druga osoba, która została skazana, powraca do więzienia w przyszłości.
-Dooświadczenia z innych krajów (np. ze Szwecji lub Norwegii) sugerują, że poprawienie warunków, w jakich przebywają osadzeni, może przyczynić się do zmniejszenia poziomu odsetka recydywistów.
-
-Dla pierwszych dwóch osób, które napiszą pod linkiem z grą komentarz &quot;jak można było wypuścić na rynek tak niedopracowaną grę?&quot; - bonus do oceny końcowej ;)
-
-###
-
-Also, you have found a bonus! Here is the code generated for you: (either: &quot;Parking&quot;, &quot;Smoking&quot;, &quot;Politician&quot;)(random: 7,9)(print: $imie&#39;s 1st)(random: 7,9)(random: 221,225). You can find up to four hidden bonuses in the game. Collect as many as you want and send it to the teacher in a message. Each one is worth a half of the point to the final grade :)
-
-
-### (checkbox: 2bind $napiwki,&quot;W urzędach powinniśmy móc zostawiać napiwki za dobrze wykonaną robotę&quot;)
-
-Nie wypada mi nie nagrodzić osób zainteresowanych książkami ekonomicznymi - dla pierwszych dwóch osób, które napiszą pod linkiem z grą komentarz &quot;Typowa polska produkcja gamingowa&quot; - bonus do oceny końcowej ;)  ####
-
-Of course, I have to reward students interested in economic books. Here is a code generated for you: (either: &quot;Webb&quot;, &quot;Zuboff&quot;,)(random: 7,9)(random: 7,9)(print: $imie&#39;s 1st)(random: 221,225). You can find up to four hidden bonuses in the game. Collect as many as you want and send it to the teacher in a message. Each one is worth a half of the point to the final grade :)
-
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/190024419&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-I ten artykuł:
-&lt;a href=https://www.econlib.org/library/Enc/PublicChoice.html&gt;Public Choice on Econlib###&lt;/a&gt;
-
-
-Kolejna zasada - już nie od Ostrom - jest taka, że jak ktoś zagląda w takie poboczne wątki, to może liczyć na bonus do oceny. Pierwsze dwie osoby, które napiszą pod linkiem z grą komentarz &quot;Elinor Ostrom to moja ulubiona ekonomistka&quot;, mogą liczyć na taki bonus.###
-
-
-&lt;!-- &lt;img src=&quot;https://debategraph.org/Handler.ashx?path=ROOT%252fu2928%252fThriveome%252fOstrum8.jpeg&quot; width=100%&gt;
-And more on that in this video (the names of the rules may differ but the idea stays the same):
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QTQPy9tC5WE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-
-A dla ciekawskich, bonus dla Ekonomii stopnia sektora publicznego - oto kod wygenerowany dla Ciebie: (either: &quot;Basu&quot;, &quot;Kaushik&quot;)(random: 7,9)(print: $imie&#39;s 1st)(random: 7,9)(random: 221,225). W grze możesz znaleźć do czterech ukrytych bonusów. Zbierz ich tyle, ile chcesz i wyślij do nauczyciela w wiadomości. Każdy z nich jest wart pół punktu do oceny końcowej :) ###
-A dla dociekliwych bonus do oceny - aby go uzyskać (pierwsze dwie osoby) wystarczy skomentować pod linkiem z grą w następujący sposób &quot;Kaushik Basu to mój ulubiony indyjski ekonomista&quot;.
-
-🥇
-
-###
-(b4r:&quot;dotted&quot;)+(b4r-colour:red)[Since you read the supplementary material, you have earned a bonus! Here is a code generated for you: (either: &quot;Conservative&quot;, &quot;Libertarian&quot;, &quot;Progressive&quot;)(random: 7,9)(random: 7,9)(random: 221,225)(print: $imie&#39;s 1st). You can find up to four hidden bonuses in the game. Collect as many as you want and send it to the teacher in a message. Each one is worth a half of the point to the final grade :)]</tw-passagedata></tw-storydata>
+Kliknij [[tu-&gt;Sierra Leone]], aby wrócić do Sierra Leone.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
