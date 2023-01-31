@@ -37,7 +37,7 @@ Wpisz swoje nazwisko
 Rodzaj gramatyczny (potrzebne do odmiany zwrotów): (dropdown: 2bind $rodzaj,&quot;żeński&quot;,&quot;męski&quot;)
 [[Rozpocznij grę -&gt;Początek]]
 
-[[Wersja gry 1.1]]</tw-passagedata><tw-passagedata pid="2" name="Oferty pracy" tags="" position="2183.333333333334,660.0000000000002" size="200,100">Po wysłaniu CV, dostał(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] zaproszenie na rozmowy kwalifikacyjne do następujących ogłoszeń: 
+[[Wersja gry 1.11]]</tw-passagedata><tw-passagedata pid="2" name="Oferty pracy" tags="" position="2183.333333333334,660.0000000000002" size="200,100">Po wysłaniu CV, dostał(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] zaproszenie na rozmowy kwalifikacyjne do następujących ogłoszeń: 
 
 =|=
 [[Dziennikarz w portalu opisującym sektor publiczny |Rozmowa dziennikarz]]
@@ -80,7 +80,8 @@ Jakie rozwiązanie zaproponujesz na podstawie zebranych informacji?
 0. [[Legalizacja dawania łapówek.]]
 0. [[Implementacja specjalnych algorytmów sztucznej inteligencji, które będą wyłapywały korupcję]]
 
-Jeśli rozwiązanie będzie skuteczne i dobrze przyjęte, masz szansę awansować na stanowisko starszego analityka ds. sektora publicznego!</tw-passagedata><tw-passagedata pid="7" name="tu 🔗" tags="" position="4610.333333333333,1617.6666666666665" size="100,100">Link do dłuższego artykułu jest &lt;a href=&quot;http://kaushikbasu.org/Act_Giving_Bribe_Legal.pdf&quot; target=_blank&gt;tu&lt;/a&gt;
+Jeśli rozwiązanie będzie skuteczne i dobrze przyjęte, masz szansę awansować na stanowisko starszego analityka ds. sektora publicznego!</tw-passagedata><tw-passagedata pid="7" name="tu 🔗" tags="" position="4610.333333333333,1617.6666666666665" size="100,100">Link do dłuższego artykułu naukowego jest &lt;a href=&quot;https://dea.gov.in/sites/default/files/Act_Giving_Bribe_Legal.pdf&quot; target=_blank&gt;tu&lt;/a&gt;, a krótszy – prasowy – 
+&lt;a href=&quot;https://www.nytimes.com/2021/09/10/opinion/bribe-immunity-india.html&quot; target=_blank&gt; tutaj&lt;/a&gt;.
 
 [[Powrót-&gt;Indie]]
 </tw-passagedata><tw-passagedata pid="8" name="Zaostrzenie kar dla osób uczestniczących w procederze łapówkarskim." tags="" position="4168.666666666665,1515.6666666666665" size="100,100">Przemyśl to jeszcze raz. Problemem w walce z korupcją jest to, że jest ona - jak już zostało wspomniane - z natury ukryta. Dzieje się tak, ponieważ obie strony mają interes w tym, żeby zachować tajność - są partnerami w przestępstwie. W przypadku ujawnienia grozi im kara. 
@@ -119,7 +120,7 @@ Jak wyjaśniasz dalej:
 &lt;img width=30% src=&quot;https://i.imgur.com/18IlD6i.png&quot;&gt;
 W przypadku dyskusji na Facebooku lajkowane są często komentarze najbardziej skrajne. 
 W ekonomii sektora publicznego ważną częścią jest teoria wyboru publicznego. W jej ramach zastanawiamy się, jak przełożyć preferencje jednostek na decyzje całego społeczeństwa.
-Zwróć uwagę, że mechanizm zastosowany na Facebooku może wzmacniać polaryzację, ponieważ często uwagę zdobywają posty i komentarze nie wyważone i uwzględniające argumenty różnych stron, ale najbardziej wyraziste i skrajne.
+Zwróć uwagę, że mechanizm zastosowany na Facebooku może wzmacniać polaryzację, ponieważ często uwagę zdobywają posty i komentarze nie te wyważone i uwzględniające argumenty różnych stron, ale najbardziej wyraziste i skrajne.
 [[Spróbuj jeszcze raz-&gt;Rozmowa dziennikarz]] 
 Aby dowiedzieć się więcej o teorii wyboru publicznego, (link-reveal:&quot;zerknij na materiały.&quot;)[
 &lt;a href=&quot;https://www.youtube.com/watch?v=dzS-RkzRRVM&quot; target=_blank&gt;Twierdzenie Arrowa o niemożności&lt;/a&gt;
@@ -170,8 +171,8 @@ Im więcej niebieskich kropek na prawo, tym częściej pojedynczy parlamentarzy�
 Jak widać, było to częste w przeszłości, a współcześnie - niemal się nie wydarza. 
 Podobne zjawisko można zaobserwować w polskim Sejmie - &lt;a href=&quot;https://twitter.com/sejm_watch/status/1330873351825448962&quot; target=_blank&gt;link&lt;/a&gt;
 
-(if: $p1 is 0)[(set: $p2 to 1)Znalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] pierwszy ukryty element. Jeśli odnajdziesz drugi, to otrzymasz dodatkowy punkt do aktywności z zajęć.](if: $p1 is 1)[Odnalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] drugi ukryty element gry. Oto unikalny kod do przesłania wykładowcy: $imie(either: &quot;-ESP-&quot;, &quot;-Ekonomia-&quot;,&quot;-UMCS-&quot;)(monthday:)-(random: 1,2)(random: 3,4)(random: 5,6)(random: 7,8) - przesłanie tego kodu w wiadomości prywatnej na Teams daje punkt do aktywności z ostatniego wykładu zamiast quizu, o ile kod zostanie wysłany w środę 05.02]
-[[Powrót-&gt;Rozmowa dziennikarz]] </tw-passagedata><tw-passagedata pid="20" name="Sprawdź wynik rozmowy kwalifikacyjnej" tags="" position="2180.666666666667,1681.6666666666663" size="200,100">Niestety, tym razem nie dostajesz angażu. Ale ponieważ redakcji spodobał sie jeden z Twoich pomysłów, to możesz spróbować w kolejnej rekrutacji za miesiąc.
+(if: $p1 is 0)[(set: $p2 to 1)Znalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] pierwszy ukryty element. Jeśli odnajdziesz drugi, to otrzymasz dodatkowy punkt do aktywności z zajęć.](if: $p1 is 1)[Odnalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] drugi ukryty element gry. Oto unikalny kod do przesłania wykładowcy: $imie(either: &quot;-ESP-&quot;, &quot;-Ekonomia-&quot;,&quot;-UMCS-&quot;)(monthday:)-(random: 1,2)(random: 3,4)(random: 5,6)(random: 7,8) - przesłanie tego kodu w wiadomości prywatnej na Teams daje punkt do aktywności z ostatniego wykładu zamiast quizu, o ile kod zostanie wysłany do piątku 03.02 włącznie]
+[[Powrót-&gt;Rozmowa dziennikarz]] </tw-passagedata><tw-passagedata pid="20" name="Sprawdź wynik rozmowy kwalifikacyjnej" tags="" position="2180.666666666667,1681.6666666666663" size="200,100">Niestety, tym razem nie dostajesz angażu. Ale ponieważ redakcji spodobał się jeden z Twoich pomysłów, to możesz spróbować w kolejnej rekrutacji za miesiąc.
 [[Odczekaj dwa tygodnie i spróbuj ponownie]]
 [[Spróbuj innej pracy-&gt;Oferty pracy]]</tw-passagedata><tw-passagedata pid="21" name="Odczekaj dwa tygodnie i spróbuj ponownie" tags="" position="1883,1684.6666666666663" size="200,100">&lt;img src=https://media.giphy.com/media/fMYhlRdVtRnsk/giphy.gif&gt;
 
@@ -207,7 +208,7 @@ Tekst ma pobudzić do dyskusji, która mogłaby docelowo przyczynić się do wpr
 &lt;img src=https://ourworldindata.org/grapher/exports/life-expectancy-vs-health-expenditure.png?v=6 width=100%&gt;
 oraz...
 &lt;img src=https://i.imgur.com/JJv7Ert.png&gt;
-Jak widać Amerykanie wydają dużo, ale ich wyniki są... niezbyt dobre.
+Jak widać, Amerykanie wydają dużo, ale ich wyniki są... niezbyt dobre.
 A dla niektórych z nich, tych bez ubezpieczenia zdrowotnego - jest to bardzo, bardzo drogie. [[💸]]
 Co robisz?
 [[Zmieniasz wybór-&gt;Dalej]] 
@@ -224,7 +225,7 @@ Innym mechanizmem trzymania kosztów w ryzach jest publikowania rachunków ze sz
 Tekst został świetnie przyjęty zarówno wśród czytelników, jak i przez kolegium redakcyjne.
 [[Przejdź do kolejnego zadania]]</tw-passagedata><tw-passagedata pid="26" name="Sierra Leone" tags="" position="2801.666666666667,1882.6666666666663" size="200,100">Krótkie rozeznanie w faktach i dowiadujesz się, że::
 &lt;img src=&quot;https://cdn.britannica.com/s:690x388,c:crop/80/5080-050-94EB5392/Sierra-Leone-boundaries-map-cities-locator.jpg&quot; width=100%&gt;
-Sierra Leone to kraj w Afryce[[🌍]], graniczący z Gwineą i Liberią. Liczy około 6 mln mieszkańców i ma... jeden z najgorszych systemów opieki zdrowotnej na świecie. 
+Sierra Leone to kraj w Afryce, graniczący z Gwineą i Liberią. Liczy około 6 mln mieszkańców i ma... jeden z najgorszych systemów opieki zdrowotnej na świecie. 
 W indeksie wydajności systemów opieki zdrowotnej WHO otrzymał najniższy wynik - 0,00.
 W przeszłości kraj został zniszczony przez wojnę domową, w czasie której placówki medyczne zostały splądrowane i zniszczone. 
 Na milion ludzi przypada tylko około 22 lekarzy. Oczekiwana długość życia w chwili urodzenia to około 54 lata. Kraj ma ogromny problem z Malarią.
@@ -238,7 +239,7 @@ Jedyny komentarz pod Twoim artykułem brzmiał: &quot;Czy widziałeś któryś z
 [[Przejdź do kolejnego zadania]]</tw-passagedata><tw-passagedata pid="29" name="Przejdź do kolejnego zadania" tags="" position="2388.666666666667,2429.6666666666665" size="100,100">(if: $imie is 0)[Po](if: $imie is not 0)[$imie, po] tekście o systemie opieki zdrowotnej dostajesz zadanie opisania skutecznych metod zmniejszania biurokracji (nie tylko państwowej, ale też występującej w przedsiębiorstwach). [[💡]]
 W tym celu skonsultowałeś się z &lt;a href=&quot;https://www.forbes.com/sites/stevedenning/2016/03/29/gary-hamels-3-trillion-prize-for-killing-bureaucracy/?sh=3227dcde6fdb&quot; target=_blank&gt;Gary&#39;m Hamelem&lt;/a&gt;, profesorem z London Business School i współzałożcielem The Management Innovation Exchange. 
 &lt;img src=&quot;https://i.imgur.com/MH6uVs0.jpeg&quot; width=80%&gt;
-Gary mówi, że gdyby koszt biurokracji w USA to 3 biliony dolarów rocznie, licząc nie tylko bezpośrednie wydatki, ale też produkcję, która powstałaby, gdyby biurokracja nie krępowała przesadnie gospodarki.
+Gary mówi, że koszt biurokracji w USA to 3 biliony dolarów rocznie, licząc nie tylko bezpośrednie wydatki, ale też produkcję, która powstałaby, gdyby biurokracja nie krępowała przesadnie gospodarki.
 Dalej Gary opowiada o trzech metodach walki z biurokrację, które nazywa
 1) (t8n:&quot;blur&quot;)+(t8n-time:1.4s)+(link-reveal:&quot;The Big Bang Approach&quot;)[. To podejście polega na wywaleniu biurokracji i np. zastąpieniu jej uznaniowymi decyzjami jednej osoby lub jakiejś grupy.]
 2) (t8n:&quot;blur&quot;)+(t8n-time:1.4s)+(link-reveal:&quot;The Gently, Gently Approach&quot;)[. To podejście polega na drobnych krokach i stopniowym zmniejszaniu biurokracji.]
@@ -260,7 +261,7 @@ Jak mówi, wiele organizacji próbowało tej metody. Usunęli pewne elementy biu
 Jak mówi &#39;&#39;The Big Bang Approach&#39;&#39; polega na &quot;wyrwaniu&quot; biurokracji i  zastąpieniu jej np. uznaniowymi decyzjami jednej osoby lub jakiejś grupy. 
 Dla wielu osób może to brzmieć atrakcyjnie, jednak Hamel zwraca uwagę, że wiąże się ono z dużym ryzykiem. Po pierwsze, ludzie potrzebują czasu, żeby dostosować się do wszelkich fundamentalnych zmian w życiu, jak i w modelu zarządzania ich organizacji. Jeśli dzieje się to zbyt szybko, to pojawia się chaos organizacyjny. Po drugie, takie rozwiązanie sprawia, że uczestnicy organizacji, którzy przecież nie brali udziału w tworzeniu nowych zasad i ich wdrażaniu, nie utożsamiają się z nowym modelem zarządzania. Uznaniowość w podejmowaniu decyzji bez jasnych alternatyw może rodzić również ryzyko korupcji.
 Z kolei &#39;&#39;The Gently, Gently Approach&#39;&#39;, czyli stopniowa i krokowa zmiana, również nie jest skuteczne. Jak mówi Hamel, wiele organizacji próbowało tej metody. Usunęli pewne elementy biurokracji, ale po czasie okazuje się, że biurokracja po prostu odradza się. Żadna organizacja nie pokona biurokracji przez półśrodki - biurokracja jest zbyt odporna. Jeśli dyrektor generalny boi się powiedzieć: „biurokracja musi umrzeć”, to tak się nie stanie. 
-Dlatego jego zdaniem skuteczna walka z biurokracją łączy myślenie rewolucyjne i ewolucyjne. Po pierwsze potrzeba wyznaczenia ambitnego i radykalnego celu - powszechnego uznania, że poprzedni system się nie sprawdził. Jednocześnie potrzebujemy ewolucyjnych kroków - w ten sposób nie będzie, ani oporu ani chaosu organizacyjnego. 
+Dlatego jego zdaniem skuteczna walka z biurokracją łączy myślenie rewolucyjne i ewolucyjne. Po pierwsze potrzeba wyznaczenia ambitnego i radykalnego celu - powszechnego uznania, że poprzedni system się nie sprawdził. Jednocześnie potrzebujemy ewolucyjnych kroków - w ten sposób nie będzie, ani oporu, ani chaosu organizacyjnego. 
 [[Oddaj artykuł do druku]]</tw-passagedata><tw-passagedata pid="35" name="Oddaj artykuł do druku" tags="" position="2826.0000000000005,2775.333333333334" size="100,100">Artykuł ukazał się w druku, inne osoby z redakcji chwaliły go za wartościową treść merytoryczną, jednak nie cieszył się zbyt dużym zainteresowaniem czytelników.
 Redaktor naczelny w trakcie rozmowy żali się, że ludzi klikają najczęściej na najbardziej na kontrowersyjne teksty, ani instytucje państwowe, ani sponsorzy prywatni nie są zainteresowani wspieraniem merytorycznego i obiektywnego dziennikarstwa. Zrezygnowany dodaje, że jest zmuszony zlecić Ci właśnie tego rodzaju tekst.
 &quot;Znajdź coś pudelkowatego z sektora publicznego&quot;, rzuca na koniec.
@@ -314,7 +315,7 @@ Miękkie ograniczenie budżetowe oznaczają możliwość otrzymywania przez prze
 [[Wróć-&gt;Wykonaj następne zadanie]] </tw-passagedata><tw-passagedata pid="43" name="Delegalizacja! Facebook jest nielegalny" tags="" position="948.3333333333334,2863.666666666667" size="200,100">Doświadczenie uczy, że użytkownicy, którzy mają potrzebę używania czegoś, po delegalizacji, szybko znajdują alternatywę w &quot;podziemiu&quot; - czy to w gospodarce realnej (alkohol, narkotyki), czy w gospodarce realnej - dostęp np. do serwisów za pomocą sieci TOR.
 Wówczas dobra lub usługi są jeszcze mniej uregulowane i przez to - często - bardziej niebezpieczne dla użytkowników.
 [[Wróć-&gt;Wykonaj następne zadanie]] </tw-passagedata><tw-passagedata pid="44" name="Regulacja nakazująca, aby każda sieć społecznościowa udostępniała protokół do komunikacji innym sieciom" tags="" position="573.0000000000001,2749.6666666666674" size="100,100">To ciekawe rozwiązanie. Jedną z podstaw siły monopolistycznej dużych sieci społecznościowych jest właśnie to, że ma ona wielu użytkowników.
-Jeśli - a takie rozwiązania są najczęściej stosowane - ta sieć nie pozwala na komunikowanie się z użytkownikami spoza sieci, to użytkownik, który odejdzie z np. Facebooka, traci możliwość kontaktu z osobami, które używają wyłącznie (lub przede wszystkim) tego serwisu. Innymi słowy, jeśli chcesz komunikować się z ludzmi, którzy korzystają głównie z Facebooka, musisz mieć tam konto.
+Jeśli - a takie rozwiązania są najczęściej stosowane - ta sieć nie pozwala na komunikowanie się z użytkownikami spoza sieci, to użytkownik, który odejdzie z np. Facebooka, traci możliwość kontaktu z osobami, które używają wyłącznie (lub przede wszystkim) tego serwisu. Innymi słowy, jeśli chcesz komunikować się z ludźmi, którzy korzystają głównie z Facebooka, musisz mieć tam konto.
 Nazywamy to mianem &#39;&#39;efektów sieciowych&#39;&#39; - korzystanie z serwisu jest tym, cenniejsze, im więcej użytkowników, jego używa. Dzięki &quot;zamknięciu&quot; się, dany serwis społecznościowy zwiększa efekt sieciowy dla siebie, a zmniejsza go dla konkurentów.
 Zwróć uwagę na to, że niezależnie od tego, na jakim serwisie masz konto pocztowe, to możesz wysyłać maile do użytkowników dowolnych innych serwisów mailowych. Z kolei do użytkowników Facebooka czy Messengera nie możesz wysłać wiadomości z serwisu Diasporar czy komunikatora Signal.
 &quot;Brawo (if: $nazwisko is 0)[nowy pracowniku, którego nazwiska nie pamiętam](if: $nazwisko is not 0)[$nazwisko]!&quot; - słyszysz od przełożonego, po chwili dopytuje jednak: &quot;każda jedna nawet najmniejsza&quot;?
@@ -335,10 +336,10 @@ W The Age of Surveillance Capitalism Shoshana Zuboff dowodzi, że logika kapital
 
 |==|
 
-(if: $p2 is 0)[(set: $p1 to 1)Znalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] pierwszy ukryty element. Jeśli odnajdziesz drugi, to otrzymasz dodatkowy punkt do aktywności z zajęć.](if: $p2 is 1)[Odnalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] drugi ukryty element gry. Oto unikalny kod do przesłania wykładowcy: $imie(either: &quot;-ESP-&quot;, &quot;-Ekonomia-&quot;,&quot;-UMCS-&quot;)(monthday:)-(random: 1,2)(random: 3,4)(random: 5,6)(random: 7,8) - przesłanie tego kodu w wiadomości prywatnej na Teams daje punkt do aktywności z ostatniego wykładu zamiast quizu, o ile kod zostanie wysłany w środę 05.02]
+(if: $p2 is 0)[(set: $p1 to 1)Znalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] pierwszy ukryty element. Jeśli odnajdziesz drugi, to otrzymasz dodatkowy punkt do aktywności z zajęć.](if: $p2 is 1)[Odnalazł(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] drugi ukryty element gry. Oto unikalny kod do przesłania wykładowcy: $imie(either: &quot;-ESP-&quot;, &quot;-Ekonomia-&quot;,&quot;-UMCS-&quot;)(monthday:)-(random: 1,2)(random: 3,4)(random: 5,6)(random: 7,8) - przesłanie tego kodu w wiadomości prywatnej na Teams daje punkt do aktywności z ostatniego wykładu zamiast quizu, o ile kod zostanie wysłany do piątku 03.02]
 [[Powrót-&gt;Wykonaj następne zadanie]] </tw-passagedata><tw-passagedata pid="46" name="Tak jest!" tags="" position="978.3333333333335,3213.0000000000005" size="100,100">Może to być zbyt mocna regulacja. 
 W ten sposób najprawdopodobniej zostanie zahamowana innowacyjność w tym obszarze, ponieważ takie rozwiązanie będzie narzucało dodatkowe koszty również na niewielkie start-upy, jak też na regulatora, który będzie musiał śledzić i kontrolować każdy, nawet najmniejszy, serwis społecznościowy.
-A do tego te start-upom trudniej będzie w początkowej fazie rozwoju budować swoją przewag konkurencyjnej.
+A do tego te start-upom trudniej będzie w początkowej fazie rozwoju budować swoją przewagę konkurencyjną.
 [[Chcę zmienić zdanie-&gt;Regulacja nakazująca, aby każda sieć społecznościowa udostępniała protokół do komunikacji innym sieciom]] </tw-passagedata><tw-passagedata pid="47" name="Zróbmy wyjątek dla nowo powstających sieci społecznościowych, które mają mało użytkowników" tags="" position="1596.3333333333333,2777" size="100,100">To mądra regulacja.
 W innym przypadku najprawdopodobniej zahamowana zostałaby innowacyjność w tym obszarze, ponieważ takie rozwiązanie narzucałoby dodatkowe koszty również na niewielkie start-upy, jak też na regulatora, który musiałby śledzić i kontrolować każdy, nawet najmniejszy, serwis społecznościowy. A do tego start-upom trudniej byłoby w początkowej fazie rozwoju budować swoją przewagę konkurencyjną.
 (if: $imie is 0)[To](if: $imie is not 0)[$imie, to] już koniec tej ścieżki gry. Gratulacje!
@@ -399,21 +400,21 @@ Jeśli wszyscy będą mieli wprowadzony limit, to po pierwsze nikt raczej nie zm
 Proponując takie rozwiązanie, możemy spodziewać się raczej przeniesienia fabryki z tego kraju do innego.
 [[Wybierz inne rozwiązanie-&gt;Przejdź do kolejnego pytania w rozmowie]]</tw-passagedata><tw-passagedata pid="58" name="Wprowadzenie specjalnego systemu zbywalnych zezwoleń na emisję" tags="" position="4072.333333333333,1330.6666666666663" size="100,100">Tak jest(if: $imie is 0)[](if: $imie is not 0)[ $imie]! System zbywalnych zezwoleń jest efektywniejszy ekonomicznie, ponieważ umożliwia sprzedaż niewykorzystanego limitu innym producentom.
 &lt;img src=https://i.imgur.com/i7NTKll.png width=50%&gt;
-Dzięki temu te podmioty, które mogą zmniejszyć emisję względnie tanio będą miały do tego bodźce ekonomiczne, a pozostałe również będą w sytuacji lepszej od wprowadzenia limitu (jeśli cena będzie odpowiednia, to kupią zezwolenia na zanieczyszczenia zamiast ograniczać emisję, a korzyści środowiskowe uzyskamy, dzięki ograniczeniu emisji przez te podmioty, które sprzedały niewykorzystane zezwolenia.
+Dzięki temu te podmioty, które mogą zmniejszyć emisję względnie tanio, będą miały do tego bodźce ekonomiczne, a pozostałe również będą w sytuacji lepszej od wprowadzenia limitu (jeśli cena będzie odpowiednia, to kupią zezwolenia na zanieczyszczenia, zamiast ograniczać emisję, a korzyści środowiskowe uzyskamy, dzięki ograniczeniu emisji przez te podmioty, które sprzedały niewykorzystane zezwolenia.
 (text-style:&quot;smear&quot;)[Gratulacje!] Jesteś zatrudnion(if:$rodzaj is &quot;żeński&quot;)[a](if:$rodzaj is &quot;męski&quot;)[y]!
 [[Zaczynasz pracę analityka]] </tw-passagedata><tw-passagedata pid="59" name="🎁" tags="" position="1276.6666666666665,379.66666666666663" size="200,100">Tak, dokładnie jak w tym przypadku. Najczęściej są to uzupełnienia wiedzy i wątki poboczne, ale uważnie klikając można znaleźć również dodatkowy punkt do zajęć.
 &lt;img src=&quot;https://media.giphy.com/media/3oKIPlLZEbEbacWqOc/giphy.gif&quot;&gt;
 [[Powrót-&gt;Start]] </tw-passagedata><tw-passagedata pid="60" name="Gurgaon" tags="" position="4124,1844.6666666666665" size="100,100">Gurgaon to bardzo interesujące miasto z perspektywy roli państwa w gospodarce. W odróżnieniu pobliskiego Faridabadu powstało właściwie bez udziału państwa i samorządu. 
 &lt;img src=&quot;https://s01.sgp1.cdn.digitaloceanspaces.com/article/103732-jsqgftzjdu-1540222742.jpg&quot; width=80%&gt;
 Faribadad miał być flagowym projektem dobrze zaprojektowanego przez władze miasta. 
-Dzieki temu możemy porównać i obserwować, co w danym mieście działa dobrze, a co źle. 
+Dzięki temu możemy porównać i obserwować, co w danym mieście działa dobrze, a co źle. 
 Przykładowo w Gurgaonie nie ma miejskiego systemu odprowadzania ścieków, są problemy z elektrycznością i wodą. Ogólnie mówiąc infrastruktura jest dość słaba i jest problem z efektami zewnętrznymi.
 Z drugiej strony miasto rozwijało się bardziej dynamicznie bez dławiącej je biurokracji. Chętnie zakładano tam firmy, a to przyciągało kolejnych mieszkańców.
 Z kolei w Faridabad infrastruktura jest na lepszym poziomie, ale rozwój tego miasta przebiega znacznie wolniej.
 [[Kolejne zlecenie]]</tw-passagedata><tw-passagedata pid="61" name="Faridabad" tags="" position="4524.999999999999,1847.9999999999998" size="100,100">Faribadad miał być flagowym projektem dobrze zaprojektowanego przez władze miasta. 
 &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/World_Street_Shopping_Mall_Faridabad.jpg/300px-World_Street_Shopping_Mall_Faridabad.jpg&quot; width=50%&gt;
 Z kolei Gurgaon powstało właściwie bez udziału państwa i samorządu. Można powiedzieć, że jest to &quot;prywatne miasto&quot; 
-Dzieki temu możemy porównywać i obserwować, co w danym mieście działa dobrze, a co źle. 
+Dzięki temu możemy porównywać i obserwować, co w danym mieście działa dobrze, a co źle. 
 Przykładowo w Gurgaonie nie ma miejskiego systemu odprowadzania ścieków, są problemy z elektrycznością i wodą. Ogólnie mówiąc infrastruktura jest dość słaba i jest problem z efektami zewnętrznymi.
 Z drugiej strony miasto rozwijało się bardziej dynamicznie bez dławiącej je biurokracji. Chętnie zakładano tam firmy, a to przyciągało kolejnych mieszkańców.
 Z kolei w Faridabadzie infrastruktura jest na lepszym poziomie, jednak rozwój tego miasta był znacznie wolniejszy.
@@ -438,25 +439,27 @@ Z kolei w Faridabadzie infrastruktura jest na lepszym poziomie, jednak rozwój t
 &lt;img src=https://media.giphy.com/media/ImxXWVDp8sfBe/giphy.gif&gt;
 Według ekspertów ds. transportu miejskiego najlepszym rozwiązaniem jest połączenie kilku różnych rozwiązań, np. rozbudowy infrastruktury z poprawą jakości transportu publicznego i rozbudową ścieżek rowerowych.
 Wówczas użytkownicy mają swobodę wyboru środka transportu, a jeśli jeden kanał jest bardziej uciążliwy (np. autobusy są przepełnione, ludzie elastycznie przesiadają się na inne kanały).
-[[Przejdź dalej]]</tw-passagedata><tw-passagedata pid="64" name="Rozbudowa infrastruktury drogowej" tags="" position="4258.999999999999,1986.3333333333333" size="100,100">Będzie to kosztowne rozwiązanie, a dodatkowo doświadczenia z innych krajów pokazuja, że poprawa jakości infrastruktury powoduje, że początkowo zmniejsza to korki, a później na drogach pojawia się więcej nowych aut (ponieważ korki są dość niewielkie, to więcej osób przerzuca się na własne auta).
+[[Przejdź dalej]]</tw-passagedata><tw-passagedata pid="64" name="Rozbudowa infrastruktury drogowej" tags="" position="4258.999999999999,1986.3333333333333" size="100,100">Będzie to kosztowne rozwiązanie, a dodatkowo doświadczenia z innych krajów pokazują, że poprawa jakości infrastruktury powoduje, że początkowo zmniejsza to korki, a później na drogach pojawia się więcej nowych aut (ponieważ korki są dość niewielkie, to więcej osób przerzuca się na własne auta).
 &lt;img src=https://media.giphy.com/media/2YOp8WqFDRHhe/giphy.gif&gt;
 Według ekspertów ds. transportu miejskiego najlepszym rozwiązaniem jest połączenie kilku różnych rozwiązań, np. rozbudowy infrastruktury z poprawą jakości transportu publicznego i rozbudową ścieżek rowerowych.
 Wówczas użytkownicy mają swobodę wyboru środka transportu, a jeśli jeden kanał jest bardziej uciążliwy (np. autobusy są przepełnione, ludzie elastycznie przesiadają się na inne kanały).
-[[Przejdź dalej]] </tw-passagedata><tw-passagedata pid="65" name="Wprowadzenie opłat za wjazd do centrum miasta" tags="" position="4411.999999999999,1994.6666666666667" size="100,100">Doświadczenia z innych krajów pokazuja, że początkowo zmniejsza to korki, a później ludzie przyzwyczają się do opłat - tak było w przypadku Londynu - i pojawiają się ponownie korki uliczne.
+[[Przejdź dalej]] </tw-passagedata><tw-passagedata pid="65" name="Wprowadzenie opłat za wjazd do centrum miasta" tags="" position="4411.999999999999,1994.6666666666667" size="100,100">Doświadczenia z innych krajów pokazują, że początkowo zmniejsza to korki, a później ludzie przyzwyczają się do opłat - tak było w przypadku Londynu - i pojawiają się ponownie korki uliczne.
 &lt;img src=https://media.giphy.com/media/VqwAVy66VCXks/giphy.gif&gt;
 Według ekspertów ds. transportu miejskiego najlepszym rozwiązaniem jest połączenie kilku różnych rozwiązań, np. rozbudowy infrastruktury z poprawą jakości transportu publicznego i rozbudową ścieżek rowerowych.
 Wówczas użytkownicy mają swobodę wyboru środka transportu, a jeśli jeden kanał jest bardziej uciążliwy (np. autobusy są przepełnione, ludzie elastycznie przesiadają się na inne kanały).
 [[Przejdź dalej]] </tw-passagedata><tw-passagedata pid="66" name="Przejdź dalej" tags="" position="4020.666666666667,2247.3333333333335" size="100,100">To już koniec ścieżki analityka. Gratulacje (if: $imie is 0)[](if: $imie is not 0)[, $imie]! 
-[[Możesz rozpocząć grę od początku-&gt;Początek]] </tw-passagedata><tw-passagedata pid="67" name="Wersja gry 1.1" tags="" position="1583.666666666667,538.3333333333335" size="100,100">Autor: Grzegorz Kwiatkowski
+[[Możesz rozpocząć grę od początku-&gt;Początek]] </tw-passagedata><tw-passagedata pid="67" name="Wersja gry 1.11" tags="" position="1583.666666666667,538.3333333333335" size="100,100">Autor: Grzegorz Kwiatkowski
 Ilustracje są od &lt;a href=&quot;https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6&quot; target=_blank&gt;Icons 8&lt;/a&gt; oraz &lt;a href=&quot;https://icons8.com/illustrations/author/5dca95ef01d036001426e2bc&quot; target=_blank&gt;Ivan Haidutski&lt;/a&gt;.
 
 0.1 - dodane bazowe scenariusze gry
-0.2 - poprawionne literówki i błędy
+0.2 - poprawione literówki i błędy
 0.3 - rozbudowany scenariusz &quot;dziennikarski&quot;
 0.4 - dodane: wybór rodzaju gramatycznego i odmiana końcówek, testy z punktami i mechanizm z liczeniem dni
 1.0 - dodane ilustracje, animacje, mechanizm punktowy i poprawiony szereg błędów
 1.01 - drobne poprawki przed publikacją gry
 1.1 - aktualizacja do 2023
+1.11 - aktualizacja do 2023
+
 
 [[Powrót-&gt;Start]] </tw-passagedata><tw-passagedata pid="68" name="Pierwsze pytanie" tags="" position="981.6666666666667,1080" size="200,100">Pierwsze pytanie brzmi następująco:
 Co to jest efektywność w rozumieniu Pareto?
@@ -466,8 +469,8 @@ Co to jest efektywność w rozumieniu Pareto?
 [[Drugie pytanie]]</tw-passagedata><tw-passagedata pid="69" name="Zacznij pracę" tags="" position="987.3333333333334,1883.3333333333333" size="200,100">Zaczynasz pracę od następującego zadania. Masz napisać opinię na temat planowanej ustawy, która wprowadziłaby obowiązek instalowania sygnalizacji świetlnej na każdym skrzyżowaniu dróg.
 &lt;img src=&quot;https://i.imgur.com/Abwd0fD.png&quot; width=40%&gt;
 Według zwolenników zwiększyłoby to bezpieczeństwo na drogach. Jakie będzie Twoje zalecenie?
-[[Zatwierdzone! Każde rozwiązanie, które zwiększa bezpieczeństwo jest dobre!]]
-[[Musimy pamiętać o koszcie alternatywnym.]]</tw-passagedata><tw-passagedata pid="70" name="Zatwierdzone! Każde rozwiązanie, które zwiększa bezpieczeństwo jest dobre!" tags="" position="1241.6666666666665,1932.3333333333333" size="200,100">Twoja opinia została mocno skrytykowana. Wielu samorządowców twierdzi, że oczywiście powinniśmy poprawić bezpieczeństwo na drogach, ale instalacja sygnalizacji świetlnej jest 💸bardzo kosztowna💸. Pojedyncza 🚦sygnalizacja świetlna kosztuje od kilkadziesiąt tysięcy złotych. 
+[[Zatwierdzone! Każde rozwiązanie, które zwiększa bezpieczeństwo, jest dobre!]]
+[[Musimy pamiętać o koszcie alternatywnym.]]</tw-passagedata><tw-passagedata pid="70" name="Zatwierdzone! Każde rozwiązanie, które zwiększa bezpieczeństwo, jest dobre!" tags="" position="1241.6666666666665,1932.3333333333333" size="200,100">Twoja opinia została mocno skrytykowana. Wielu samorządowców twierdzi, że oczywiście powinniśmy poprawić bezpieczeństwo na drogach, ale instalacja sygnalizacji świetlnej jest 💸bardzo kosztowna💸. Pojedyncza 🚦sygnalizacja świetlna kosztuje od kilkadziesiąt tysięcy złotych. 
 Powinniśmy oczywiście zainstalować sygnalizację świetlną na niektórych skrzyżowaniach, ale niekoniecznie na wszystkich. Niektóre skrzyżowania nie są niebezpieczne, więc instalacja tam urządzenia wiązałaby się z wysokimi kosztami i byłaby marnotrawieniem środków.
 Te pieniądze mogłyby zwiększyć bezpieczeństwo, gdyby zostały wydane w inny sposób.
 Za każdym razem, gdy wydajemy publiczne pieniądze, powinniśmy pamiętać o &quot;koszcie alternatywnym&quot; (jak inaczej moglibyśmy wykorzystać tę kwotę?).
@@ -486,9 +489,7 @@ Za każdym razem, gdy wydajemy publiczne pieniądze, powinniśmy pamiętać o &q
 ]</tw-passagedata><tw-passagedata pid="73" name="Jedno rozwiązanie w tym przypadku nie wystarczy. Zastosujmy mix!" tags="" position="4675.666666666666,2071.3333333333335" size="100,100">Tak jest!
 Według ekspertów ds. transportu miejskiego najlepszym rozwiązaniem jest połączenie kilku różnych rozwiązań, np. rozbudowy infrastruktury z poprawą jakości transportu publicznego i rozbudową ścieżek rowerowych.
 Wówczas użytkownicy mają swobodę wyboru środka transportu, a jeśli jeden kanał jest bardziej uciążliwy (np. autobusy są przepełnione, ludzie elastycznie przesiadają się na inne kanały).
-[[Przejdź dalej]] </tw-passagedata><tw-passagedata pid="74" name="🌍" tags="" position="2927.6666666666665,2190.333333333333" size="100,100">Odnalaz(if:$rodzaj is &quot;żeński&quot;)[aś](if:$rodzaj is &quot;męski&quot;)[eś] tajemne przejście do innej gry - robocza wersja tworzonej właśnie drugiej części gry o inflacji (możesz pamiętać ją z poprzedniego roku).
-Kliknij &lt;a href=&quot;https://gkwiatk.github.io/gra-inflacja-2/&quot; target=_blank&gt;tu&lt;/a&gt;, aby zagrać.
-Kliknij [[tu-&gt;Sierra Leone]], aby wrócić do Sierra Leone.</tw-passagedata></tw-storydata>
+[[Przejdź dalej]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
